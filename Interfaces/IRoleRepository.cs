@@ -5,7 +5,7 @@ namespace MovieFactoryWebAPI.Interfaces
 {
     public interface IRoleRepository
     {
-        ICollection<Role>? GetRoles();
+        ICollection<Role> GetRoles();
 
         ICollection<RoleCSVDto> GetRolesForFile();
 

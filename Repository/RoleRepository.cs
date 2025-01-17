@@ -45,7 +45,7 @@ namespace MovieFactoryWebAPI.Repository
 
         public ICollection<Role> GetRoles()
         {
-            return _context.Roles.ToList();
+            return _context.Roles.ToList() ?? new List<Role>();
         }
 
         public Actor? GetActorByRole(string roleName)
